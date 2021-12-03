@@ -13,7 +13,7 @@ const transcode = async () => {
     return
   }
   if (!ffmpeg) {
-    ffmpeg = createFFmpeg({ log: false, progress: p => displayProgress(p) });
+    ffmpeg = createFFmpeg({ corePath: './lib/ffmpeg-core.js', log: false, progress: p => displayProgress(p) });
   }
 
   ffmpeg.setLogger(({ type, message }) => {
