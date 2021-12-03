@@ -6,4 +6,4 @@ Video2Gifは動画をGIF画像に変換するツールです。
 
 ```bash
 python3 server.py
-'''
+```
